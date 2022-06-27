@@ -1,0 +1,391 @@
+body{
+    background-image: linear-gradient(-45deg, rgb(249, 249, 113), rgb(255,148,125) , rgb(255 ,111 ,171));
+}
+.maindiv{
+    margin-top: 80px; 
+    margin-bottom:80px;
+}
+
+.subdiv1{
+    height: 550px;
+     margin-right: 10px;
+      border-radius: 25px;
+
+}
+.subdiv2{
+    height: 550px;
+    margin-left: 10px;
+    border-radius: 25px;
+
+}
+
+
+.icons{
+    color: #fdc378;
+   
+}
+
+.anchoricons{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+#flipdiv{
+    margin-top: 60px;
+}
+
+.iconsbtn{
+    display: none;
+    margin-top: 10px;
+    background-color: #ff898b;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    padding: 15px;
+    height: 60px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    transform: rotateY(180deg);
+   
+  
+}
+
+.iconsdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+.anchoricons{
+
+    
+}
+.anchoricons:hover  {
+    transform: rotateY(180deg);
+   
+  }
+  .yourname{
+    font-family: 'Allan', cursive;
+    
+  }
+
+  .cvbutton{
+   background-color: white;
+   border-color:#fdc378 ;
+   font-weight: bold;
+   font-family: 'Nunito Sans', sans-serif;
+   border-radius: 5px;
+   color: #fdc378;
+   padding: 10px;
+  }
+
+  .cvbutton:hover{
+    background-color: #fdc378;
+    color: white;
+
+  }
+
+
+  /*about me css*/
+
+  #aboutme{
+    animation: 1s ease-out 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0.4;
+    }
+    50%{
+        opacity:0.8 ;
+    }
+    100% {
+      transform: translateX(0);
+      opacity:1 ;
+    }
+ 
+}
+#iddiv{
+    animation: 1s ease-out 0s 1 slideInLeft;
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0.4;
+    }
+    50%{
+        opacity:0.8 ;
+    }
+    100% {
+      transform: translateX(0);
+      opacity:1 ;
+    }
+ 
+}
+#aboutmediv{
+    display: flex;
+   justify-content: end;
+    animation: 1s ease-out 0s 1 slide;
+    
+    
+}
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+   
+  }
+ 
+  100% {
+    transform: translateX(0);
+   
+  }
+}
+.aboutbtns{
+    display: none;
+    background-color: #ff898b;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    padding: 10px;
+    height: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    transform: rotateY(180deg);
+}
+.aboutme-text{
+ margin-top: 2rem;
+}
+ .aboutme-title
+{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    color: #fdc378;
+}
+
+.aboutme-paragraph
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    
+    padding-left: 2rem;
+    
+}
+.aboutme-socialicon
+{
+    margin-top: 5rem;
+    text-align: right;
+}
+
+
+.aboutme-text .aboutme-socialicon #img
+{
+     width: 50px;
+     height: 50px;
+     background-color: transparent;
+     cursor: pointer;
+}
+
+
+.socialanchor{
+
+  color: black;
+
+}
+.socialanchor:hover{
+color: #fdc378;
+}
+
+
+/* contact me css*/
+#sec1
+{
+  
+    max-height: 550px;
+    margin-right: 10px;
+    
+   
+}
+
+ .container .card
+{
+   background-color: #f9eb72;
+    height: 180px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+i
+{
+    font-size: 2.5rem;
+   color: #ff76a2;
+}
+
+.card h4
+{
+  
+    font-family:'Alegreya Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+.card h6
+{
+    font-family: 'Allan', cursive;
+    font-size: 1.5rem;
+    color: #ff76a2;
+
+}
+
+
+
+#title-Tag-Line {
+    font-size: 20px;
+  }
+ 
+  
+  /* form animation starts */
+  .form {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  /*   z-index: 1; */
+    
+  }
+
+  
+  .title{
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+  }
+  .termsConditions{
+    margin: 0 auto 5px 80px;
+  }
+  
+  .pageTitle{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#F4D03F;
+    text-align: center;
+    letter-spacing: .5px;
+  }
+  .secondaryTitle{
+    color: grey;
+    text-align: center;
+    font-family: 'Allan', cursive;
+  }
+  
+  .name {
+    background-color: #ebebeb;
+    color: white;
+  }
+  .name:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .email {
+    background-color: #ebebeb;
+    height: 2em;
+  }
+  
+  .email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+  }
+  
+  .message:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .submit {
+    width: 200px;
+    color: white;
+    background-color:#16A085;
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+ 
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3721;
+    border-radius: 0%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+  } 
+
+  footer
+  {
+      padding: 2rem var(--padding);
+      
+  }
+  
+  footer .content-footer
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  footer .content-footer .end
+  {
+      color: var(--primaryColor);
+      margin-top: 1rem;
+  
+  }
+  
+  footer .content-footer .end i
+  {
+      color:var(--primaryColor);
+      font-size: 16px;
+  }
+  
+  span
+  {
+      color: var(--threeColor);
+  }
+
+
