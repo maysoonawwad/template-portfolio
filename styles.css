@@ -181,28 +181,18 @@ body{
 }
 .aboutme-socialicon
 {
-    margin-top: 5rem;
-    text-align: right;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  text-align: right;
 }
 
 
-.aboutme-text .aboutme-socialicon #img
-{
-     width: 50px;
-     height: 50px;
-     background-color: transparent;
-     cursor: pointer;
-}
 
 
-.socialanchor{
 
-  color: black;
 
-}
-.socialanchor:hover{
-color: #fdc378;
-}
+
 
 
 /* contact me css*/
@@ -225,12 +215,18 @@ color: #fdc378;
     margin-bottom: 20px;
     
 }
-i
+.contact-leftdivicon{
+  font-size: 2.5rem;
+  color: #ff76a2;
+}
+.socialicon
 {
     font-size: 2.5rem;
-   color: #ff76a2;
+    color: black;
 }
-
+.socialicon:hover{
+  color: #fdc378;
+}
 .card h4
 {
   
@@ -252,98 +248,81 @@ i
 #title-Tag-Line {
     font-size: 20px;
   }
- 
-  
-  /* form animation starts */
-  .form {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  /*   z-index: 1; */
-    
-  }
 
-  
-  .title{
-    display: block;
-    font-family: sans-serif;
-    margin: 10px auto 5px;
-  }
-  .termsConditions{
-    margin: 0 auto 5px 80px;
-  }
   
   .pageTitle{
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color:#F4D03F;
-    text-align: center;
     letter-spacing: .5px;
+ 
   }
-  .secondaryTitle{
-    color: grey;
-    text-align: center;
-    font-family: 'Allan', cursive;
+  .formdiv{
+    margin-top: 50px;
+    margin-left: 20px;
   }
-  
+  .form{
+    margin-top: 30px;
+  }
   .name {
     background-color: #ebebeb;
-    color: white;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom:20px;
   }
   .name:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 30px;
-    width: 380px;
+    border-bottom: 5px solid black;
+    height: 50px;
     transition: ease 0.5s;
   }
   
   .email {
     background-color: #ebebeb;
-    height: 2em;
+    height: 40px;
+    padding-left: 10px;
   }
   
   .email:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 30px;
-    width: 380px;
+    border-bottom: 5px solid black;
+    height: 50px;
     transition: ease 0.5s;
   }
   
   .message {
     background-color: #ebebeb;
     overflow: hidden;
-    height: 10rem;
+    height: 11.4rem;
+    padding-left: 10px;
   }
   
   .message:hover {
-    border-bottom: 5px solid #0e3721;
-    height: 12em;
-    width: 380px;
+    border-bottom: 5px solid black;
+    height: 12rem;
     transition: ease 0.5s;
   }
   
   .formEntry {
     display: block;
-    margin: 30px auto;
     min-width: 300px;
-    padding: 10px;
     border-radius: 2px;
     border: none;
     transition: all 0.5s ease 0s;
+   
   }
   
   .submit {
     width: 200px;
     color: white;
-    background-color:#16A085;
+    height: 40px;
+    background-color:#fdc378;
     font-size: 20px;
+    margin-top: 40px;
   }
   
   .submit:hover {
  
     transform: translateY(-3px);
-    width: 300px;
-    border-top: 5px solid #0e3721;
+   
     border-radius: 0%;
   }
   
@@ -356,36 +335,42 @@ i
     }
   } 
 
-  footer
-  {
-      padding: 2rem var(--padding);
-      
-  }
-  
-  footer .content-footer
-  {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  
-  }
-  footer .content-footer .end
-  {
-      color: var(--primaryColor);
-      margin-top: 1rem;
-  
-  }
-  
-  footer .content-footer .end i
-  {
-      color:var(--primaryColor);
-      font-size: 16px;
-  }
-  
-  span
-  {
-      color: var(--threeColor);
-  }
+ 
+
+.contactfield{
+  margin-right: 10px;
+
+}
 
 
+footer
+{
+    padding: 2rem var(--padding);
+    
+}
+
+footer .content-footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+footer .content-footer .end
+{
+    color: var(--primaryColor);
+    margin-top: 1rem;
+
+}
+
+footer .content-footer .end i
+{
+    color:var(--primaryColor);
+    font-size: 16px;
+}
+
+span
+{
+    color: var(--threeColor);
+}
