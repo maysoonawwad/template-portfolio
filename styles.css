@@ -16,7 +16,12 @@ body{
     height: 550px;
     margin-left: 10px;
     border-radius: 25px;
-
+    overflow-y: scroll;
+    scrollbar-width: 5px;
+  
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 
@@ -60,10 +65,7 @@ body{
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 
 }
-.anchoricons{
 
-    
-}
 .anchoricons:hover  {
     transform: rotateY(180deg);
    
@@ -182,8 +184,8 @@ body{
 .aboutme-socialicon
 {
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  bottom: 20px;
+  right: 20px;
   text-align: right;
 }
 
@@ -205,9 +207,9 @@ body{
    
 }
 
- .container .card
+ .container .contact-card
 {
-   background-color: #f9eb72;
+   background-color: #f9ee72;
     height: 180px;
     border-radius: 25px;
     align-items: center;
@@ -222,12 +224,13 @@ body{
 .socialicon
 {
     font-size: 2.5rem;
+    margin-right: 5px;
     color: black;
 }
 .socialicon:hover{
-  color: #fdc378;
+  color: white;
 }
-.card h4
+.contact-card h4
 {
   
     font-family:'Alegreya Sans', sans-serif;
@@ -235,7 +238,7 @@ body{
     margin-bottom: 15px;
     color: white;
 }
-.card h6
+.contact-card h6
 {
     font-family: 'Allan', cursive;
     font-size: 1.5rem;
@@ -258,12 +261,13 @@ body{
  
   }
   .formdiv{
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: 20px;
   }
   .form{
     margin-top: 30px;
   }
+  
   .name {
     background-color: #ebebeb;
     height: 40px;
@@ -280,6 +284,7 @@ body{
     background-color: #ebebeb;
     height: 40px;
     padding-left: 10px;
+    margin-top: 20px;
   }
   
   .email:hover {
@@ -291,13 +296,13 @@ body{
   .message {
     background-color: #ebebeb;
     overflow: hidden;
-    height: 11.4rem;
+    height: 6rem;
     padding-left: 10px;
   }
   
   .message:hover {
     border-bottom: 5px solid black;
-    height: 12rem;
+    height: 7rem;
     transition: ease 0.5s;
   }
   
@@ -316,7 +321,7 @@ body{
     height: 40px;
     background-color:#fdc378;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 24px;
   }
   
   .submit:hover {
@@ -373,4 +378,29 @@ footer .content-footer .end i
 span
 {
     color: var(--threeColor);
+}
+
+
+/*servieces section*/
+
+.servieces-header{
+  margin-top: 20px;
+  font-family:'Alegreya Sans', sans-serif;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.servieces-sections{
+  margin-top: 40px;
+  margin-left: 15px;
+}
+.servieces-sections h3{
+  font-family: 'Allan', cursive;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.servieces-desgincards{
+  display: flex;
+
+ 
 }
